@@ -1,4 +1,4 @@
-import { SxStyleProp } from '@vtex/store-ui'
+import { createTheme, SxStyleProp } from '@vtex/store-ui'
 
 const paginationDots: SxStyleProp = {
   container: {
@@ -39,13 +39,93 @@ const paginationDots: SxStyleProp = {
   },
 }
 
+const shelfPaginationDots: SxStyleProp = createTheme(paginationDots, {
+  container: {
+    position: 'relative',
+  },
+})
+
+const shelfArrows: SxStyleProp = {
+  left: {
+    button: {
+      bg: 'transparent',
+      borderColor: 'transparent',
+    },
+
+    svg: {
+      color: 'text',
+    },
+  },
+
+  right: {
+    button: {
+      bg: 'transparent',
+      borderColor: 'transparent',
+    },
+
+    svg: {
+      color: 'text',
+    },
+  },
+}
+
+const carouselArrows: SxStyleProp = {
+  left: {
+    button: {
+      position: 'absolute',
+      top: '50%',
+      left: 0,
+      zIndex: 1,
+      bg: 'transparent',
+      borderColor: 'transparent',
+    },
+
+    svg: {
+      color: 'text',
+    },
+  },
+
+  right: {
+    button: {
+      position: 'absolute',
+      top: '50%',
+      right: 0,
+      zIndex: 1,
+      bg: 'transparent',
+      borderColor: 'transparent',
+    },
+
+    svg: {
+      color: 'text',
+    },
+  },
+}
+
 const theme: SxStyleProp = {
+  productImageGallery: {
+    position: 'relative',
+    mx: 2,
+
+    group: {
+      display: 'flex',
+      flexWrap: 'nowrap',
+      justifyContent: 'center',
+    },
+
+    arrow: shelfArrows,
+    paginationDots: shelfPaginationDots,
+  },
+
   carousel: {
+    position: 'relative',
+    arrow: carouselArrows,
     paginationDots,
   },
 
   shelf: {
     default: {
+      arrow: shelfArrows,
+
       container: {
         width: '100%',
         height: '585px',
@@ -62,21 +142,7 @@ const theme: SxStyleProp = {
         my: '20px',
       },
 
-      paginationDots: {
-        ...paginationDots,
-        container: {
-          ...paginationDots.container,
-          position: 'relative',
-        },
-        dot: {
-          ...paginationDots.dot,
-          margin: '24px 12px 12px 12px',
-        },
-        activeDot: {
-          ...paginationDots.activeDot,
-          margin: '24px 12px 12px 12px',
-        },
-      },
+      paginationDots: shelfPaginationDots,
     },
   },
 }
