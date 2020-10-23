@@ -8,17 +8,6 @@
   A store theme powered by VTEX and Gatsby
 </h1>
 
-a
-sdf
-as
-df
-
-
-
-
-
-
-asdf
 as
 df
 
