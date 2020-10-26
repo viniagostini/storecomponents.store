@@ -1,6 +1,5 @@
 /// <reference types="cypress" />
 
-
 context('Sample', () => {
   it('Adds a product to the cart', () => {
     cy.visit('/')
