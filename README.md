@@ -12,13 +12,6 @@ Kick off your project with this default boilerplate. This starter ships with the
 asdfasdfasdf
 asdfasdfasdfsdaf
 asdf
-asdf
-asdfasdfasdfasdf
-asdfasdfasdasdfasdf
-asdfasdfsadfdsf
-asdfasdfasdfasdf
-asdf
-asdfasdf
 
 asdfasdf
 ## 🚀 Quick start
