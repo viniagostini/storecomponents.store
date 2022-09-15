@@ -2337,6 +2337,18 @@
     "@graphql-tools/relay-operation-optimizer" "^6.0.15"
     fs-extra "^9.0.1"
 
+"@vtex/gatsby-plugin-graphql@^0.373.50":
+  version "0.373.50"
+  resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-graphql/-/gatsby-plugin-graphql-0.373.50.tgz#c3149352c83331aaa8cee56a5e774dd68c1200c1"
+  integrity sha512-5a+ylw3bUYtU7XO65mvTOJdbtuLhkm9Z618eKhh0yMHX7PfeYWoXsFMZ32xnyo9XMUY0pm11kYhqvJaibMC9KA==
+  dependencies:
+    "@graphql-codegen/core" "^1.17.7"
+    "@graphql-codegen/plugin-helpers" "^1.17.7"
+    "@graphql-codegen/typescript" "^1.17.7"
+    "@graphql-codegen/typescript-operations" "^1.17.7"
+    "@graphql-tools/relay-operation-optimizer" "^6.0.15"
+    fs-extra "^9.0.1"
+
 "@vtex/gatsby-plugin-i18n@^0.275.0":
   version "0.275.0"
   resolved "https://registry.yarnpkg.com/@vtex/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.275.0.tgz#5424c15252f16a0c2d3f7d2732c4751717d50146"
